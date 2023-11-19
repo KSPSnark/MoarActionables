@@ -1,0 +1,12 @@
+echo Creating release file structure
+mkdir -p GameData/MoarActionables
+cp ../files/ModuleManager.*.dll GameData
+cp ../files/ModuleManagerLicense.md GameData
+cp ../files/changelog.txt GameData/MoarActionables
+cp ../src/bin/Release/MoarActionables.dll GameData/MoarActionables
+cp ../LICENSE GameData/MoarActionables
+cp ../README.md GameData/MoarActionables
+cp -R ../files/localization GameData/MoarActionables
+cp -R ../files/parts GameData/MoarActionables
+cp -R ../files/patches GameData/MoarActionables
+echo Done.
